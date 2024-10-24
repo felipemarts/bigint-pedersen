@@ -1,15 +1,33 @@
 {
   "name": "bigint-pedersen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "pub": "tsc && npm publish --access public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipemarts/bigint-pedersen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felipemarts/bigint-pedersen/issues"
+  },
+  "homepage": "https://github.com/felipemarts/bigint-pedersen#readme",
+  "keywords": [
+    "pedersen",
+    "commitments",
+    "homomorphic",
+    "encryption"
+  ],
+  "author": "Felipe Martins <felipe@bywise.org>",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.7.9",
